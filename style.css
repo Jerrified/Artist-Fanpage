@@ -15,6 +15,7 @@ body {
     width: 250px;
     height: 100%;
     background: #042331;
+    transition: all .5s ease;
 }
 
 .sidebar header {
@@ -64,18 +65,39 @@ label #btn {
     font-size: 35px;
     color: white;
     padding: 6px 12px;
+    transition: all .5s;
 }
 
 label #cancel {
     z-index: 11111;
-    left: 195px;
+    left: -195px;
     top: 17px;
     font-size: 30px;
     color: #0a5275;
     padding: 4px 9px;
+    transition: all .5s ease;
 }
 
 #check:checked ~ .sidebar {
     left: 0;
-    
+
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+section {
+    background: url(Assets/Images/ew&f.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
 }
