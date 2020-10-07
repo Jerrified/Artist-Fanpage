@@ -1,35 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo" src="Assets/Images/ewf-logo.webp">
+            <ul>
+                <li><a class="active" href="landing.html">Landing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </nav>
+        <div id="reg" style="text-align: center; border: 1px solid black; padding: 10px;">
+            <form id="form" action="landing.html" method="POST">
 
-    <html lang="en" dir="ltr">
-
-        <head>
-            <meta charset="utf-8">
-            <title>Landing</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        </head>
-
-        <body>
-            <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fas fa-bars" id="btn"></i>
-                <i class="fas fa-times" id="cancel"></i>
-            </label>
-            <div class="sidebar">
-                <header>Navigation</header>
-                <ul>
-                    <li><a href="landing.html"><i class="fas fa-plane-arrival"></i>Landing</a></li>
-                    <li><a href="about.html"><i class="far fa-question-circle"></i>About</a></li>
-                    <li><a href="media.html"><i class="fas fa-compact-disc"></i>Media</a></li>
-                </ul>
-            </div>
-            <section>
-                <div class="landingbod">
-                    <h1>Earth, Wind, and Fire</h1>
-                    <p>DESCRIPTION</p>
-                </div>
-            </section>
-
-        </body>
-
-    </html>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Firstname">
+                    <input type="text" id="name" name="user_name" placeholder="Lastname">
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" placeholder="Email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="user_password" placeholder="Password">
+                    <label for="password">Confirm Password:</label>
+                    <input type="password" id="password" name="user_password" placeholder="Confirm Password">
+                    <input type="button" onclick="RemoveForm()" value="Click Me" style="width: 300px;">
+            </form>
+        </div>
+        <div class="center">
+            <h1>Earth, Wind & Fire</h1>
+            <h2>
+                Earth, Wind & Fire (abbreviated as EW&F or simply EWF) is an American band that has spanned 
+                the musical genres of R&B, soul, funk, jazz, disco, pop, rock, dance, Latin, and Afro pop.
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

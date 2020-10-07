@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
@@ -94,18 +94,89 @@ label #cancel {
     margin-left: 250px;
 }
 
-section {
+.background {
     background: url(Assets/Images/ew&f.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
     transition: all .5s;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.landingbod {
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: #f4f7f8;
-    border-radius: 8px;
+.wrapper {
+    background: url(Assets/Images/ew&f2.jpg) center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+    padding: 20px 100px;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Piazzolla', serif;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: goldenrod;
+    border-radius: 2px;
+}
+
+.wrapper .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-family: 'Piazzolla', serif;
+    user-select: none;
+}
+
+.center h1 {
+    color: red;
+    font-size: 70px;
+    font-weight: bold;
+
+    width: 900px;
+    text-align: center;
+}
+
+.center h1 {
+    color: red;
+    font-size: 70px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
 }
