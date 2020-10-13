@@ -109,12 +109,6 @@ label #cancel {
     margin: 0;
 }
 
-.wrapper {
-    background: url(Assets/Images/ew&f2.jpg) center;
-    background-size: cover;
-    height: 100vh;
-}
-
 .navbar {
     height: 80px;
     width: 100%;
@@ -193,4 +187,13 @@ label #cancel {
     font-size: 25px;
     margin-top: 10px;
     background-color: goldenrod;
+}
+
+.mw {
+    position: absolute;
+    bottom: 8px;
+    left: 1000px;
+    right: 1000px;
+    width: 160px;
+    height: 250px;
 }
